@@ -9,7 +9,6 @@ namespace BK.Bootstrap
         private void Awake()
         {
             gameObject.SetActive(false);
-
         }
     }
 }

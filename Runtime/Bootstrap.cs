@@ -6,7 +6,7 @@ namespace BK.Bootstrap
     public class Bootstrap : MonoBehaviour
     {
         [Tooltip("Load any scene with the same name with a suffice of \"_data\"")]
-        public bool loadDataScene;
+        public bool hasDataScene;
 
         private void Awake()
         {
@@ -31,7 +31,7 @@ namespace BK.Bootstrap
             if (!bootstrapLoaded)
                 SceneManager.LoadScene("bootstrap", LoadSceneMode.Additive);
 
-            if (!dataSceneLoaded && loadDataScene)
+            if (!dataSceneLoaded && hasDataScene)
             {
                 // //Not editor, or in editor and preview enabled
                 // if (!Application.isEditor || (Application.isEditor && previewInGame))
