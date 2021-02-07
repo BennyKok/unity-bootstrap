@@ -5,7 +5,7 @@ using UnityEngine;
 using BK.RuntimeDebug;
 #endif
 
-namespace BK.Bootstrap
+namespace BennyKok.Bootstrap
 {
     public class SpawnPoint : MonoBehaviour
     {

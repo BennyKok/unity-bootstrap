@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 using UnityEngine.Timeline;
 using Cinemachine;
 
-namespace BK.Bootstrap
+namespace BennyKok.Bootstrap
 {
     public class CinemachineBrainBinding : MonoBehaviour
     {

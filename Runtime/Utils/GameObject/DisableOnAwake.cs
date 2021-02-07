@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace BK.Bootstrap
+namespace BennyKok.Bootstrap
 {
     public class DisableOnAwake : MonoBehaviour
     {

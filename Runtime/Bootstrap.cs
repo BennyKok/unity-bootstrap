@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace BK.Bootstrap
+namespace BennyKok.Bootstrap
 {
     public class Bootstrap : MonoBehaviour
     {
