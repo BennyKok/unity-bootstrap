@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿#if HAS_CINEMACHINE
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
@@ -26,3 +27,5 @@ namespace BennyKok.Bootstrap
         }
     }
 }
+
+#endif
