@@ -1,6 +1,7 @@
 {
   "name": "com.bennykok.bootstrap",
   "displayName": "Bootstrap",
+  "author": "BennyKok",
   "version": "1.0.0",
   "description": "Bootstrap component for addictive scene loading",
   "type": "tool"
