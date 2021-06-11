@@ -3,13 +3,14 @@ using UnityEngine.SceneManagement;
 
 namespace BennyKok.Bootstrap
 {
-    public class Bootstrap : MonoBehaviour
+    public class Bootstrap : Singleton<Bootstrap>
     {
         [Tooltip("Load any scene with the same name with a suffice of \"_data\"")]
         public bool hasDataScene;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             var bootstrapLoaded = false;
             var dataSceneLoaded = false;
             var dataSceneName = gameObject.scene.name + "_data";
