@@ -8,6 +8,10 @@ namespace BennyKok.Bootstrap
         [Tooltip("Load any scene with the same name with a suffice of \"_data\"")]
         public bool hasDataScene;
 
+        private void Start() {
+            SceneManager.SetActiveScene(gameObject.scene);
+        }
+
         protected override void Awake()
         {
             base.Awake();

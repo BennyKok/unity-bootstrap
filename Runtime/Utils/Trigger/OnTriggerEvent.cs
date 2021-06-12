@@ -6,6 +6,9 @@ namespace BennyKok.Bootstrap
     public class OnTriggerEvent : MonoBehaviour
     {
         public string checkTag;
+        public bool triggerOnce;
+
+        private bool triggered;
 
         public UnityEvent onEnter;
 
@@ -25,6 +28,8 @@ namespace BennyKok.Bootstrap
 
         public bool Compare(Collider col)
         {
+            if (triggerOnce && triggered) return false;
+            triggered = true;
             if (string.IsNullOrEmpty(checkTag)) return true;
             if (col.CompareTag(checkTag)) return true;
 
