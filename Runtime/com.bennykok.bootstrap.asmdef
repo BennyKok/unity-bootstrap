@@ -15,14 +15,14 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "com.bennykok.runtime-debug",
-            "expression": "",
-            "define": "RUNTIME_DEBUG"
-        },
-        {
             "name": "com.unity.cinemachine",
             "expression": "",
             "define": "HAS_CINEMACHINE"
+        },
+        {
+            "name": "com.bennykok.runtime-debug-action",
+            "expression": "",
+            "define": "RUNTIME_DEBUG_SYSTEM"
         }
     ],
     "noEngineReferences": false
