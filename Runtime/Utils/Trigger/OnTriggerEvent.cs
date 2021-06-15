@@ -14,14 +14,21 @@ namespace BennyKok.Bootstrap
 
         public UnityEvent onExit;
 
+        private void Start()
+        {
+
+        }
+
         private void OnTriggerEnter(Collider other)
         {
+            if (!enabled) return;
             if (Compare(other))
                 InvokeOnEnter();
         }
 
         private void OnTriggerExit(Collider other)
         {
+            if (!enabled) return;
             if (Compare(other))
                 InvokeOnExit();
         }

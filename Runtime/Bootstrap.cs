@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace BennyKok.Bootstrap
@@ -8,7 +9,9 @@ namespace BennyKok.Bootstrap
         [Tooltip("Load any scene with the same name with a suffice of \"_data\"")]
         public bool hasDataScene;
 
-        private void Start() {
+        IEnumerator Start()
+        {
+            yield return new WaitForEndOfFrame();
             SceneManager.SetActiveScene(gameObject.scene);
         }
 
