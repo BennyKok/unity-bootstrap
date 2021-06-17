@@ -15,9 +15,8 @@ namespace BennyKok.Bootstrap
             SceneManager.SetActiveScene(gameObject.scene);
         }
 
-        protected override void Awake()
+        public override void OnAwake()
         {
-            base.Awake();
             var bootstrapLoaded = false;
             var dataSceneLoaded = false;
             var dataSceneName = gameObject.scene.name + "_data";
