@@ -14,6 +14,10 @@ namespace BennyKok.Bootstrap
 
         private void Start()
         {
+            Bind();
+        }
+
+        public void Bind(){
             var director = GetComponent<PlayableDirector>();
             var mainCamera = Camera.main.GetComponent<CinemachineBrain>();
 
